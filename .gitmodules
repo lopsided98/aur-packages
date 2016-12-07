@@ -5,3 +5,6 @@
 [submodule "qdriverstation-git"]
 	path = qdriverstation-git
 	url = ssh://aur@aur.archlinux.org/qdriverstation-git.git
+[submodule "keepass-plugin-quickunlock"]
+	path = keepass-plugin-quickunlock
+	url = ssh://aur@aur.archlinux.org/keepass-plugin-quickunlock.git
