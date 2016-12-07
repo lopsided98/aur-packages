@@ -1,0 +1,7 @@
+[submodule "qdriverstation"]
+	path = qdriverstation
+	url = ssh://aur@aur.archlinux.org/qdriverstation.git
+
+[submodule "qdriverstation-git"]
+	path = qdriverstation-git
+	url = ssh://aur@aur.archlinux.org/qdriverstation-git.git
