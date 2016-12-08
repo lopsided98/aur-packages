@@ -8,3 +8,6 @@
 [submodule "keepass-plugin-quickunlock"]
 	path = keepass-plugin-quickunlock
 	url = ssh://aur@aur.archlinux.org/keepass-plugin-quickunlock.git
+[submodule "ldcad"]
+	path = ldcad
+	url = ssh://aur@aur.archlinux.org/ldcad.git
