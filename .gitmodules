@@ -11,3 +11,6 @@
 [submodule "ldcad"]
 	path = ldcad
 	url = ssh://aur@aur.archlinux.org/ldcad.git
+[submodule "obfuscate"]
+	path = obfuscate
+	url = ssh://aur@aur.archlinux.org/obfuscate.git
