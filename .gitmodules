@@ -14,3 +14,9 @@
 [submodule "obfuscate"]
 	path = obfuscate
 	url = ssh://aur@aur.archlinux.org/obfuscate.git
+[submodule "python-sphinx-autobuild"]
+	path = python-sphinx-autobuild
+	url = ssh://aur@aur.archlinux.org/python-sphinx-autobuild.git
+[submodule "python-port-for"]
+	path = python-port-for
+	url = ssh://aur@aur.archlinux.org/python-port-for.git
