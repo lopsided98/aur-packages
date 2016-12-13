@@ -1,0 +1,71 @@
+# Maintainer: Ben Wolsieffer <benwolsieffer@gmail.com>
+# A DRY template for creating a Python 2/3 split package for a Python package
+# that uses setuptools and is available on GitHub.
+
+_py_pkgname=
+_github_url=
+pkgbase=python-${_py_pkgname}
+pkgname=(python-${_py_pkgname} python2-${_py_pkgname})
+pkgver=
+pkgrel=1
+pkgdesc=""
+arch=('any')
+url="${_github_url}"
+license=()
+groups=()
+depends=()
+makedepends=('python-setuptools' 'python2-setuptools')
+checkdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=(${_py_pkgname}::git+${_github_url}.git#tag=$pkgver)
+noextract=()
+sha256sums=('SKIP')
+
+prepare() {
+    cp -a "${srcdir}/${_py_pkgname}" "${srcdir}/python2-${_py_pkgname}"
+}
+
+build() {
+    cd "${srcdir}/${_py_pkgname}"
+    python setup.py build
+    cd "${srcdir}/python2-${_py_pkgname}"
+    python2 setup.py build
+}
+
+# Automatically create package functions using Bash magic
+source /dev/stdin << EOF
+package_python-${_py_pkgname}() {
+    depends=('python')
+    optdepends=()
+
+    cd "\${srcdir}/${_py_pkgname}"
+
+    python setup.py install --skip-build --root="\${pkgdir}" --optimize=1
+
+    # If using MIT license
+    # install -Dm644 LICENSE "\${pkgdir}/usr/share/licenses/\${pkgname}/LICENSE"
+}
+
+package_python2-${_py_pkgname}() {
+    depends=('python2')
+    optdepends=()
+
+    cd "\${srcdir}/python2-${_py_pkgname}"
+
+    python2 setup.py install --skip-build --root="\${pkgdir}" --optimize=1
+
+    # If using MIT license
+    # install -Dm644 LICENSE "\${pkgdir}/usr/share/licenses/\${pkgname}/LICENSE"
+    
+    # Make sure to add suffixes to any commands included with the package
+    # mv "\${pkgdir}/usr/bin/${_cmd}" "\${pkgdir}/usr/bin/${_cmd}-python2"
+}
+EOF
+
+# vim:set ts=4 sw=4 et:
