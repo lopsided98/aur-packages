@@ -20,3 +20,12 @@
 [submodule "python-port-for"]
 	path = python-port-for
 	url = ssh://aur@aur.archlinux.org/python-port-for.git
+[submodule "dnsupdate-git"]
+	path = dnsupdate-git
+	url = ssh://aur@aur.archlinux.org/dnsupdate-git.git
+[submodule "dnsupdate"]
+	path = dnsupdate
+	url = ssh://aur@aur.archlinux.org/dnsupdate.git
+[submodule "python-sphinx-rtd-theme"]
+	path = python-sphinx-rtd-theme
+	url = ssh://aur@aur.archlinux.org/python-sphinx-rtd-theme.git
