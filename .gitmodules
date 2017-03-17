@@ -29,3 +29,6 @@
 [submodule "python-sphinx-rtd-theme"]
 	path = python-sphinx-rtd-theme
 	url = ssh://aur@aur.archlinux.org/python-sphinx-rtd-theme.git
+[submodule "btrfs-snap"]
+	path = btrfs-snap
+	url = ssh://aur@aur.archlinux.org/btrfs-snap.git
