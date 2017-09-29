@@ -32,3 +32,6 @@
 [submodule "btrfs-snap"]
 	path = btrfs-snap
 	url = ssh://aur@aur.archlinux.org/btrfs-snap.git
+[submodule "python-pynmea2"]
+	path = python-pynmea2
+	url = ./python-pynmea2
