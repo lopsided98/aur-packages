@@ -14,7 +14,7 @@ url="${_github_url}"
 license=()
 groups=()
 depends=()
-makedepends=('python-setuptools' 'python2-setuptools')
+makedepends=('git' 'python-setuptools' 'python2-setuptools')
 checkdepends=()
 provides=()
 conflicts=()
@@ -28,7 +28,7 @@ noextract=()
 sha256sums=('SKIP')
 
 prepare() {
-    cp -a "${srcdir}/${_py_pkgname}" "${srcdir}/python2-${_py_pkgname}"
+    cp -af "${srcdir}/${_py_pkgname}" "${srcdir}/python2-${_py_pkgname}"
 }
 
 build() {
