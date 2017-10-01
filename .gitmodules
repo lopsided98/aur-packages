@@ -38,3 +38,6 @@
 [submodule "python-nss"]
 	path = python-nss
 	url = ./python-nss
+[submodule "python-sphinx-argparse"]
+	path = python-sphinx-argparse
+	url = ./python-sphinx-argparse
