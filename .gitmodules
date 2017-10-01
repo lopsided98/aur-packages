@@ -35,3 +35,6 @@
 [submodule "python-pynmea2"]
 	path = python-pynmea2
 	url = ./python-pynmea2
+[submodule "python-nss"]
+	path = python-nss
+	url = ./python-nss
