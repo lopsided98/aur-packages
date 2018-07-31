@@ -41,3 +41,6 @@
 [submodule "python-sphinx-argparse"]
 	path = python-sphinx-argparse
 	url = ./python-sphinx-argparse
+[submodule "slapi-nis"]
+	path = slapi-nis
+	url = ssh://aur@aur.archlinux.org/slapi-nis.git
