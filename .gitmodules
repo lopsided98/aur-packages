@@ -1,7 +1,6 @@
 [submodule "qdriverstation"]
 	path = qdriverstation
 	url = ssh://aur@aur.archlinux.org/qdriverstation.git
-
 [submodule "qdriverstation-git"]
 	path = qdriverstation-git
 	url = ssh://aur@aur.archlinux.org/qdriverstation-git.git
@@ -34,13 +33,13 @@
 	url = ssh://aur@aur.archlinux.org/btrfs-snap.git
 [submodule "python-pynmea2"]
 	path = python-pynmea2
-	url = ./python-pynmea2
+	url = ssh://aur@aur.archlinux.org/python-pynmea2.git
 [submodule "python-nss"]
 	path = python-nss
-	url = ./python-nss
+	url = ssh://aur@aur.archlinux.org/python-nss.git
 [submodule "python-sphinx-argparse"]
 	path = python-sphinx-argparse
-	url = ./python-sphinx-argparse
+	url = ssh://aur@aur.archlinux.org/python-sphinx-argparse.git
 [submodule "slapi-nis"]
 	path = slapi-nis
 	url = ssh://aur@aur.archlinux.org/slapi-nis.git
